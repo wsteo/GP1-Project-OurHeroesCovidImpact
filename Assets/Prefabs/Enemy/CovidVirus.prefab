@@ -87,6 +87,7 @@ GameObject:
   - component: {fileID: 4737372182131363051}
   - component: {fileID: 3842683680406552836}
   - component: {fileID: 1263140120}
+  - component: {fileID: -5250091493217527271}
   m_Layer: 0
   m_Name: CovidVirus
   m_TagString: Enemy
@@ -185,6 +186,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 350
+--- !u!114 &-5250091493217527271
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4737372182131363044}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff6c2e2d6c57e4e448cc7bf27065482c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 10
 --- !u!1 &4914010838170066724
 GameObject:
   m_ObjectHideFlags: 0
