@@ -6,7 +6,7 @@ public class Shoot_Brackeys : MonoBehaviour
 {
     private Transform target;
 
-    [Header("Attributes")]
+    [Header("Tower Attributes")]
     public float range = 1f;
     public float fireRate = 1f;
     private float fireCountDown = 0f;

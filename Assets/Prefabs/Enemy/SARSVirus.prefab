@@ -10,6 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 2805112863033923559}
   - component: {fileID: 2805112863033923480}
+  - component: {fileID: 1283974490259334762}
+  - component: {fileID: 8993699458458999985}
   m_Layer: 0
   m_Name: SARSVirus
   m_TagString: Enemy
@@ -81,3 +83,29 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!135 &1283974490259334762
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2805112863033923481}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 2.21
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &8993699458458999985
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2805112863033923481}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f2ff5e20cf0c7904a8016cfef40033f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 200
