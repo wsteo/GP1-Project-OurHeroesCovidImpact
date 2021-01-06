@@ -19,7 +19,7 @@ public class Bullet : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(target == null)
+        if (target == null)
         {
             Destroy(gameObject);
             return;
@@ -28,7 +28,7 @@ public class Bullet : MonoBehaviour
         Vector3 dir = target.position - transform.position;
         float distanceThisFrame = Speed * Time.deltaTime;
 
-        if(dir.magnitude < distanceThisFrame)
+        if (dir.magnitude < distanceThisFrame)
         {
             HitTarget();
             return;
