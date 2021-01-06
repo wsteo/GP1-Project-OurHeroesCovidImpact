@@ -28,10 +28,10 @@ public class Shoot_Brackeys : MonoBehaviour
         float shortestDistance = Mathf.Infinity;
         GameObject nearestEnemy = null;
 
-        foreach(GameObject enemy in enemies)
+        foreach (GameObject enemy in enemies)
         {
             float distanceToEnemy = Vector3.Distance(transform.position, enemy.transform.position);
-            if(distanceToEnemy < shortestDistance)
+            if (distanceToEnemy < shortestDistance)
             {
                 shortestDistance = distanceToEnemy;
                 nearestEnemy = enemy;
@@ -44,7 +44,7 @@ public class Shoot_Brackeys : MonoBehaviour
         }
         else
         {
-            target = null; 
+            target = null;
         }
     }
 
@@ -53,7 +53,7 @@ public class Shoot_Brackeys : MonoBehaviour
         if (target == null)
             return;
 
-        if(fireCountDown <= 0f)
+        if (fireCountDown <= 0f)
         {
             Shoot();
             fireCountDown = 1f / fireRate;
@@ -67,7 +67,7 @@ public class Shoot_Brackeys : MonoBehaviour
         GameObject bulletGO = (GameObject)Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
         Bullet bullet = bulletGO.GetComponent<Bullet>();
 
-        if(bullet != null)
+        if (bullet != null)
         {
             bullet.Seek(target);
         }
