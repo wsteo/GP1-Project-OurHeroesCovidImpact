@@ -36,4 +36,9 @@ public class EnemyMovement : MonoBehaviour
         waypointIndex++;
         target = Waypoints.points[waypointIndex];
     }
+
+    private void EndPath(){
+        WaveSpawner.EnemiesAlive--;
+        Destroy(gameObject);
+    }
 }

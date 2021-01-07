@@ -24,6 +24,7 @@ public class Enemy_Stats : MonoBehaviour
 
     void Die()
     {
+        WaveSpawner.EnemiesAlive--;
         Destroy(gameObject);
     }
 
