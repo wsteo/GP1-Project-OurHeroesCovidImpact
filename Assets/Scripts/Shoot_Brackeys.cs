@@ -6,7 +6,7 @@ public class Shoot_Brackeys : MonoBehaviour
 {
     private Transform target;
 
-    [Header("Attributes")]
+    [Header("Tower Attributes")]
     public float range = 1f;
     public float fireRate = 1f;
     private float fireCountDown = 0f;
@@ -30,7 +30,7 @@ public class Shoot_Brackeys : MonoBehaviour
 
         foreach (GameObject enemy in enemies)
         {
-            float distanceToEnemy = Vector3.Distance(transform.position, enemy.transform.position);
+            float distanceToEnemy = Vector2.Distance(transform.position, enemy.transform.position);
             if (distanceToEnemy < shortestDistance)
             {
                 shortestDistance = distanceToEnemy;
