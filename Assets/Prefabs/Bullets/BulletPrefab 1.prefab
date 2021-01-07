@@ -10,7 +10,6 @@ GameObject:
   m_Component:
   - component: {fileID: 3948397597498247786}
   - component: {fileID: 4935763727335287191}
-  - component: {fileID: 1057491177}
   m_Layer: 0
   m_Name: BulletPrefab 1
   m_TagString: Untagged
@@ -71,7 +70,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 3a818f4a463502c4faa7243b3d824667, type: 3}
+  m_Sprite: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -79,23 +78,6 @@ SpriteRenderer:
   m_Size: {x: 20.000223, y: 27.619999}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &1057491177
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 389815137772799073}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7bd9fd3f898bdff46a728252e28346f4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Speed: 10
-  damage: 20
-  explosionRadius: 0.1
-  impactEffect: {fileID: 7777476762137527412, guid: 457ddd2687a764a4489f6d8b5b321211,
-    type: 3}
