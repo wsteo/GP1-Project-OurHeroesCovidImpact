@@ -1,18 +1,18 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
     private bool gameOver = false;
+    public float restartDelay;
 
     // Update is called once per frame
     void Update()
     {
         if(gameOver == true)
         {
-            return;
+            Debug.Log("Game Over");
+            Invoke("Restart", restartDelay);
         }
 
         if(PlayerStats.Lives <= 0)
@@ -22,7 +22,11 @@ public class GameManager : MonoBehaviour
     }
     void EndGame()
     {
-        Debug.Log("GAME OVER!");
         gameOver = true;
+    }
+
+    void Restart()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 }
