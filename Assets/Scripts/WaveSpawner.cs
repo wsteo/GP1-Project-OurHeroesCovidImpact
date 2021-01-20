@@ -9,8 +9,10 @@ public class WaveSpawner : MonoBehaviour
 
     [SerializeField]
     private Wave[] waves;
+
     [SerializeField]
     private Transform spawnPoint;
+
     [SerializeField]
     public float timeBetweenWaves = 5f;
     private float countdown = 3f;
@@ -19,6 +21,8 @@ public class WaveSpawner : MonoBehaviour
 
     private void Update()
     {
+        StartCoroutine(skipWaveWhenEnemyFinish());
+
         if (countdown <= 0f)
         {
             StartCoroutine(SpawnWave());
@@ -29,9 +33,19 @@ public class WaveSpawner : MonoBehaviour
         waveCountdownText.text = "Next Wave in: " + Mathf.Round(countdown).ToString();
     }
 
+    private IEnumerator skipWaveWhenEnemyFinish()
+    {
+        yield return new WaitForSeconds(3);
+        if (EnemiesAlive == 0)
+        {
+            countdown = 0;
+        }
+    }
+
     private IEnumerator SpawnWave()
     {
         Wave wave = waves[waveIndex];
+        PlayerStats.Rounds++;
 
         for (int i = 0; i < wave.count; i++)
         {

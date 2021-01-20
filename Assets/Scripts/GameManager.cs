@@ -3,16 +3,22 @@ using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
-    private bool gameOver = false;
+    public static bool gameOver;
     public float restartDelay;
+
+    public GameObject gameOverUI;
+
+    private void Start()
+    {
+        gameOver = false;
+    }
 
     // Update is called once per frame
     void Update()
     {
-        if(gameOver == true)
+        if(Input.GetKeyDown("e"))
         {
-            Debug.Log("Game Over");
-            Invoke("Restart", restartDelay);
+            EndGame();
         }
 
         if(PlayerStats.Lives <= 0)
@@ -23,10 +29,6 @@ public class GameManager : MonoBehaviour
     void EndGame()
     {
         gameOver = true;
-    }
-
-    void Restart()
-    {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        gameOverUI.SetActive(true);
     }
 }

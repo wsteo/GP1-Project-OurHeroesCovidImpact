@@ -6,7 +6,9 @@ using UnityEngine.UI;
 public class Enemy_Stats : MonoBehaviour
 {
     public float startHealth = 100;
-    public float damageDeal = 10;
+    public int damageDeal = 10;
+
+    public int rewardGold = 50;
 
     private float health;
 
@@ -33,6 +35,7 @@ public class Enemy_Stats : MonoBehaviour
     void Die()
     {
         WaveSpawner.EnemiesAlive--;
+        PlayerStats.Money += this.rewardGold;
         Destroy(gameObject);
     }
 

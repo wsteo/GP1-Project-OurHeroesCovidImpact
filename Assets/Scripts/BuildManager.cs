@@ -19,14 +19,30 @@ public class BuildManager : MonoBehaviour
     public GameObject DoctorPrefab;
     public GameObject NursePrefab;
 
+    public GameObject buildEffect;
+
     private HeroesBlueprint turretToBuild;
 
     public bool CanBuild { get { return turretToBuild == null; } }
+    public bool HasMoney { get { return PlayerStats.Money >= turretToBuild.cost; } }
 
     public void BuildHeroesOnNode(Node node)
     {
+        if(PlayerStats.Money < turretToBuild.cost)
+        {
+            Debug.Log("Insufficient gold");
+            return;
+        }
+
+        PlayerStats.Money -= turretToBuild.cost;
+
         GameObject turret = (GameObject)Instantiate(turretToBuild.prefab, node.GetBuildPosition(), Quaternion.identity);
         node.turret = turret;
+
+        GameObject effect =  (GameObject)Instantiate(buildEffect, node.GetBuildPosition(), Quaternion.identity);
+        Destroy(effect, 3f);
+
+        Debug.Log("Turret Build! Money left: " + PlayerStats.Money);
     }
 
     public void SelectTurretToBuild(HeroesBlueprint turret)

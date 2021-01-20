@@ -1,5 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.Audio;
@@ -11,6 +10,8 @@ public class MainMenu : MonoBehaviour
     public AudioMixer audioMixer;
     public Dropdown resolutionDropdown;
     Resolution[] resolutions;
+
+    public SceneFader sceneFader;
 
     void Start()
     {
@@ -36,6 +37,11 @@ public class MainMenu : MonoBehaviour
         resolutionDropdown.AddOptions(options);
         resolutionDropdown.value = currentResolutionIndex;
         resolutionDropdown.RefreshShownValue();
+    }
+
+    public void Play()
+    {
+        sceneFader.FadeTo("Menu");
     }
 
     public void PlayGame() 
@@ -67,7 +73,6 @@ public class MainMenu : MonoBehaviour
 
     public void QuitGame()
     {
-        Debug.Log("QUIT!");
         Application.Quit();
     }
 }
