@@ -29,7 +29,7 @@ public class EnemyMovement : MonoBehaviour
 
         if (waypointIndex >= Waypoints.points.Length - 1)
         {
-            Destroy(gameObject);
+            EndPath();
             return;
         }
 
@@ -38,7 +38,10 @@ public class EnemyMovement : MonoBehaviour
     }
 
     private void EndPath(){
+        Enemy_Stats dmg =  GetComponent<Enemy_Stats>();
+
         WaveSpawner.EnemiesAlive--;
+        PlayerStats.Lives -= dmg.damageDeal;
         Destroy(gameObject);
     }
 }

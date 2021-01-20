@@ -4,10 +4,13 @@ using UnityEngine.UI;
 public class LivesUI : MonoBehaviour
 {
     public Text LiveText;
+    public Text redLiveText;
     
     // Update is called once per frame
     void Update()
-    { 
-        LiveText.text = "Lives: " + PlayerStats.Lives.ToString();
+    {
+        redLiveText.text = PlayerStats.Lives.ToString();
+        redLiveText.color = Color.red;
+        LiveText.text = "Lives: ";
     }
 }
