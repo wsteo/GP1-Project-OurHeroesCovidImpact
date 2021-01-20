@@ -3,6 +3,7 @@
 public class Node : MonoBehaviour
 {
     public Color hoverColor;
+    public Color noMoneyColour;
     public Vector3 positionOffset;
 
     [Header("Optinal")]
@@ -45,13 +46,16 @@ public class Node : MonoBehaviour
         if (buildManager.CanBuild)
             return;
 
-        if (turret != null)
+        if(buildManager.HasMoney)
         {
-            Debug.Log("Can't build here! TODO: Display on Screen");
-            return;
+            rend.material.color = hoverColor;
+        }
+        else
+        {
+            rend.material.color = noMoneyColour;
         }
         
-        rend.material.color = hoverColor;
+
     }
 
     private void OnMouseExit()
