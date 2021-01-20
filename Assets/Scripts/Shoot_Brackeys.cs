@@ -75,7 +75,7 @@ public class Shoot_Brackeys : MonoBehaviour
 
     private void OnDrawGizmosSelected()
     {
-        Gizmos.color = Color.white;
+        Gizmos.color = Color.red;
         Gizmos.DrawWireSphere(transform.position, range);
     }
 }

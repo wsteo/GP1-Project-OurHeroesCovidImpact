@@ -2,24 +2,28 @@
 
 public class Shop : MonoBehaviour
 {
+    public HeroesBlueprint Army;
+    public HeroesBlueprint Doctor;
+    public HeroesBlueprint Nurse;
+
     BuildManager buildManager;
     private void Start()
     {
         buildManager = BuildManager.instance;
     }
-    public void PurchaseSoldier()
+    public void SelectSoldier()
     {
         Debug.Log("Bought Soldier");
-        buildManager.SetTurretToBuild(buildManager.Army);
+        buildManager.SelectTurretToBuild(Army);
     }
-    public void PurchaseDoctor()
+    public void SelectDoctor()
     {
         Debug.Log("Bought Doctor");
-        buildManager.SetTurretToBuild(buildManager.Doctor);
+        buildManager.SelectTurretToBuild(Doctor);
     }
-    public void PurchaseNurse()
+    public void SelectNurse()
     {
         Debug.Log("Bought Nurse");
-        buildManager.SetTurretToBuild(buildManager.Nurse);
+        buildManager.SelectTurretToBuild(Nurse);
     }
 }
