@@ -5,7 +5,7 @@ using UnityEngine;
 public class BuildManager : MonoBehaviour
 {
     public static BuildManager instance;
-    private void Awake()
+   void Awake()
     {
         if(instance != null)
         {
@@ -15,18 +15,21 @@ public class BuildManager : MonoBehaviour
         instance = this;
     }
 
-    public GameObject Army;
-    public GameObject Doctor;
-    public GameObject Nurse;
+    public GameObject ArmyPrefab;
+    public GameObject DoctorPrefab;
+    public GameObject NursePrefab;
 
-    private GameObject turretToBuild;
+    private HeroesBlueprint turretToBuild;
 
-    public GameObject GetTurretToBuild()
+    public bool CanBuild { get { return turretToBuild == null; } }
+
+    public void BuildHeroesOnNode(Node node)
     {
-        return turretToBuild;
+        GameObject turret = (GameObject)Instantiate(turretToBuild.prefab, node.GetBuildPosition(), Quaternion.identity);
+        node.turret = turret;
     }
 
-    public void SetTurretToBuild(GameObject turret)
+    public void SelectTurretToBuild(HeroesBlueprint turret)
     {
         turretToBuild = turret;
     }

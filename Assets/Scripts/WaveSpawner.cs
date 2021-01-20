@@ -1,5 +1,5 @@
 ﻿using System.Collections;
-using System.Collections.Generic;
+using System.Drawing;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -12,18 +12,13 @@ public class WaveSpawner : MonoBehaviour
     [SerializeField]
     private Transform spawnPoint;
     [SerializeField]
-    private float timeBetweenWaves = 5f;
-    private float countdown = 2f;
+    public float timeBetweenWaves = 5f;
+    private float countdown = 3f;
     public Text waveCountdownText;
     private int waveIndex = 0;
 
     private void Update()
     {
-        if (EnemiesAlive > 0)
-        {
-            return;
-        }
-
         if (countdown <= 0f)
         {
             StartCoroutine(SpawnWave());
@@ -31,8 +26,7 @@ public class WaveSpawner : MonoBehaviour
             return;
         }
         countdown -= Time.deltaTime;
-
-        waveCountdownText.text = Mathf.Round(countdown).ToString();
+        waveCountdownText.text = "Next Wave in: " + Mathf.Round(countdown).ToString();
     }
 
     private IEnumerator SpawnWave()
