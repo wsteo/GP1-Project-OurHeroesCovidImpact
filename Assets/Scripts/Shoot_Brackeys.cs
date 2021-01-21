@@ -16,10 +16,12 @@ public class Shoot_Brackeys : MonoBehaviour
 
     public GameObject bulletPrefab;
     public Transform firePoint;
+    private Animator anim;
 
     private void Start()
     {
         InvokeRepeating("UpdateTarget", 0f, 0.5f);
+        anim = GetComponent<Animator>();
     }
 
     void UpdateTarget()
@@ -45,6 +47,7 @@ public class Shoot_Brackeys : MonoBehaviour
         else
         {
             target = null;
+            anim.SetBool("IsShooting", false);
         }
     }
 
@@ -64,6 +67,8 @@ public class Shoot_Brackeys : MonoBehaviour
 
     void Shoot()
     {
+        anim.SetBool("IsShooting", true);
+
         GameObject bulletGO = (GameObject)Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
         Bullet bullet = bulletGO.GetComponent<Bullet>();
 

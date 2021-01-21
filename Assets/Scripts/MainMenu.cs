@@ -8,17 +8,13 @@ using UnityEngine.UI;
 public class MainMenu : MonoBehaviour
 {
     public AudioMixer audioMixer;
-    public Dropdown resolutionDropdown;
     Resolution[] resolutions;
     public GameObject levelSelect;
     public GameObject closeMenu;
-    public SceneFader sceneFader;
 
     void Start()
     {
         resolutions = Screen.resolutions;
-
-        //resolutionDropdown.ClearOptions();
 
         int currentResolutionIndex = 0;
         List<string> options = new List<string>();
@@ -34,10 +30,6 @@ public class MainMenu : MonoBehaviour
                 currentResolutionIndex = i;           
             }
         }
-
-        //resolutionDropdown.AddOptions(options);
-        resolutionDropdown.value = currentResolutionIndex;
-        resolutionDropdown.RefreshShownValue();
     }
 
     public void Play()
@@ -45,8 +37,6 @@ public class MainMenu : MonoBehaviour
         levelSelect.SetActive(true);
         closeMenu.SetActive(false);
     }
-
-
 
     public void SetResolution(int resolutionIndex)
     {
