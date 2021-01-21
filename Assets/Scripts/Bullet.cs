@@ -62,6 +62,7 @@ public class Bullet : MonoBehaviour
             if(collider.tag == "Enemy")
             {
                 Damage(collider.transform);
+                FindObjectOfType<AudioManager>().Play("AttackSound");
             }
         }
     }
