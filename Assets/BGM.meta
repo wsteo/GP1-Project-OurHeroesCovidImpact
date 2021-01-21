@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< HEAD:Assets/BGM.meta
 guid: 2023aaf7ccd2c894c90d1ad233f8e153
+=======
+guid: 1157ddd9639390640ad4c8d0cf45e846
+>>>>>>> main:Assets/Animation/Army Attacking.meta
 folderAsset: yes
 DefaultImporter:
   externalObjects: {}
