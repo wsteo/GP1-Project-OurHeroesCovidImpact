@@ -10,7 +10,8 @@ public class MainMenu : MonoBehaviour
     public AudioMixer audioMixer;
     public Dropdown resolutionDropdown;
     Resolution[] resolutions;
-
+    public GameObject levelSelect;
+    public GameObject closeMenu;
     public SceneFader sceneFader;
 
     void Start()
@@ -41,13 +42,10 @@ public class MainMenu : MonoBehaviour
 
     public void Play()
     {
-        sceneFader.FadeTo(0);
+        levelSelect.SetActive(true);
+        closeMenu.SetActive(false);
     }
 
-    public void PlayGame() 
-    {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
-    }
 
 
     public void SetResolution(int resolutionIndex)
