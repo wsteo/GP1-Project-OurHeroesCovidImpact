@@ -17,7 +17,7 @@ public class MainMenu : MonoBehaviour
     {
         resolutions = Screen.resolutions;
 
-        resolutionDropdown.ClearOptions();
+        //resolutionDropdown.ClearOptions();
 
         int currentResolutionIndex = 0;
         List<string> options = new List<string>();
@@ -41,7 +41,7 @@ public class MainMenu : MonoBehaviour
 
     public void Play()
     {
-        sceneFader.FadeTo("Menu");
+        sceneFader.FadeTo(0);
     }
 
     public void PlayGame() 

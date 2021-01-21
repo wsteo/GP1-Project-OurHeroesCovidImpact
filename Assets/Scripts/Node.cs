@@ -9,15 +9,15 @@ public class Node : MonoBehaviour
     [Header("Optinal")]
     public GameObject turret;
 
-    private Renderer rend;
+    private SpriteRenderer rend;
     private Color startColor;
 
     BuildManager buildManager;
 
     private void Start()
     {
-        rend = GetComponent<Renderer>();
-        startColor = rend.material.color;
+        rend = GetComponent<SpriteRenderer>();
+        startColor = rend.color;
 
         buildManager = BuildManager.instance;
     }
@@ -46,20 +46,20 @@ public class Node : MonoBehaviour
         if (buildManager.CanBuild)
             return;
 
-        if(buildManager.HasMoney)
+        if (buildManager.HasMoney)
         {
-            rend.material.color = hoverColor;
+            rend.color = hoverColor;
         }
         else
         {
-            rend.material.color = noMoneyColour;
+            rend.color = noMoneyColour;
         }
-        
+
 
     }
 
     private void OnMouseExit()
     {
-        rend.material.color = startColor;
+        rend.color = startColor;
     }
 }

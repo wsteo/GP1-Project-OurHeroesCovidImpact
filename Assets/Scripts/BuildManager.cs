@@ -30,7 +30,6 @@ public class BuildManager : MonoBehaviour
     {
         if(PlayerStats.Money < turretToBuild.cost)
         {
-            Debug.Log("Insufficient gold");
             return;
         }
 
@@ -41,8 +40,6 @@ public class BuildManager : MonoBehaviour
 
         GameObject effect =  (GameObject)Instantiate(buildEffect, node.GetBuildPosition(), Quaternion.identity);
         Destroy(effect, 3f);
-
-        Debug.Log("Turret Build! Money left: " + PlayerStats.Money);
     }
 
     public void SelectTurretToBuild(HeroesBlueprint turret)

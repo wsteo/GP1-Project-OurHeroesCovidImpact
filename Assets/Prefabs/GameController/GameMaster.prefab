@@ -1,0 +1,107 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &6099893886758087640
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6099893886758087645}
+  - component: {fileID: 6099893886758087644}
+  - component: {fileID: 6099893886758087647}
+  - component: {fileID: 6099893886758087646}
+  - component: {fileID: 6099893886758087641}
+  m_Layer: 0
+  m_Name: GameMaster
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6099893886758087645
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6099893886758087640}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 472.48315, y: 208.21918, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6099893886758087644
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6099893886758087640}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 424b500d83545a9469417dbe4f1d678c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startMoney: 600
+  startLives: 50
+--- !u!114 &6099893886758087647
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6099893886758087640}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bcfb752571d3b0541808c53df5dd83c4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  waves:
+  - enemy: {fileID: 4737372182131363044, guid: 7924b5fde25ef1c45bbab6010c720cac, type: 3}
+    count: 5
+    rate: 1
+  - enemy: {fileID: 2805112863033923481, guid: 05afaba6479c9b2459e27b79b4cd62e5, type: 3}
+    count: 8
+    rate: 0.5
+  spawnPoint: {fileID: 0}
+  timeBetweenWaves: 20
+  waveCountdownText: {fileID: 0}
+  gameManager: {fileID: 6099893886758087641}
+--- !u!114 &6099893886758087646
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6099893886758087640}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cbbfb022aab309445aada50ec598e0e0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ArmyPrefab: {fileID: 6088753611376818100, guid: 5f9da8b02ac5e2e4988c2da7317f8adb,
+    type: 3}
+  DoctorPrefab: {fileID: 2386430774447794596, guid: cf63623ad72a65f41b0ad7c4a2555b9c,
+    type: 3}
+  NursePrefab: {fileID: 2386430774447794596, guid: cdf19bf52b32ac5429015a19e4275884,
+    type: 3}
+  buildEffect: {fileID: 8247970248460517091, guid: cb3c1fff054c00c4db508aee80cba8d7,
+    type: 3}
+--- !u!114 &6099893886758087641
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6099893886758087640}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56c0ba5de46fca64cb5512eecd06f421, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameOverUI: {fileID: 0}
+  completeLvlUI: {fileID: 0}
