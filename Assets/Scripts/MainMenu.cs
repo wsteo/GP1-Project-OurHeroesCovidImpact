@@ -35,7 +35,7 @@ public class MainMenu : MonoBehaviour
             }
         }
 
-        resolutionDropdown.AddOptions(options);
+        //resolutionDropdown.AddOptions(options);
         resolutionDropdown.value = currentResolutionIndex;
         resolutionDropdown.RefreshShownValue();
     }
