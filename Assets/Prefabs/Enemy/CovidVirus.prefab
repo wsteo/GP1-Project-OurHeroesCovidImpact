@@ -148,7 +148,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 2
   m_Sprite: {fileID: 21300000, guid: 46448130621c26f4d8c8c414e9d1c34b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -189,6 +189,7 @@ MonoBehaviour:
   damageDeal: 10
   rewardGold: 40
   healthBar: {fileID: 658448320923390966}
+  isDead: 0
 --- !u!114 &-5250091493217527271
 MonoBehaviour:
   m_ObjectHideFlags: 0

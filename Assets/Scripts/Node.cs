@@ -34,7 +34,6 @@ public class Node : MonoBehaviour
 
         if (turret != null)
         {
-            Debug.Log("Can't build here! TODO: Display on Screen");
             return;
         }
 
