@@ -89,7 +89,7 @@ MonoBehaviour:
     type: 3}
   NursePrefab: {fileID: 2386430774447794596, guid: cdf19bf52b32ac5429015a19e4275884,
     type: 3}
-  buildEffect: {fileID: 8247970248460517091, guid: cb3c1fff054c00c4db508aee80cba8d7,
+  buildEffect: {fileID: 8247970248460517091, guid: 9b2961201ab4e17429cd4d398681ab81,
     type: 3}
 --- !u!114 &6099893886758087641
 MonoBehaviour:
