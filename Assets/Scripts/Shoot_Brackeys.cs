@@ -60,8 +60,6 @@ public class Shoot_Brackeys : MonoBehaviour
         {
             Shoot();
             fireCountDown = 1f / fireRate;
-            //tarcheng add 1 attack sound
-            FindObjectOfType<AudioManager>().Play("AttackSound");
         }
 
         fireCountDown -= Time.deltaTime;
