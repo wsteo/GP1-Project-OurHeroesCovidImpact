@@ -2447,7 +2447,7 @@ MonoBehaviour:
   spawnPoint: {fileID: 1014248781}
   timeBetweenWaves: 20
   waveCountdownText: {fileID: 1597526093}
-  gameManager: {fileID: 0}
+  gameManager: {fileID: 895178857}
 --- !u!114 &895178860
 MonoBehaviour:
   m_ObjectHideFlags: 0
