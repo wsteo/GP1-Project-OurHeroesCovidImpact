@@ -136,7 +136,7 @@ PrefabInstance:
     - target: {fileID: 1503953574805573267, guid: 1915ae210e673db44935c29e633b4c52,
         type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1503953574805573267, guid: 1915ae210e673db44935c29e633b4c52,
         type: 3}
@@ -864,6 +864,12 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5673080233299854430, guid: 14efdd240a1914c4cae14adb26c9e741,
     type: 3}
   m_PrefabInstance: {fileID: 88916537}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &104644165 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8454087770113318426, guid: ce711dc16b328b647a96b53ceb487a52,
+    type: 3}
+  m_PrefabInstance: {fileID: 2126423869}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &118599374
 PrefabInstance:
@@ -2903,6 +2909,18 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 811371293}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &821407444 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2701686332298939652, guid: ce711dc16b328b647a96b53ceb487a52,
+    type: 3}
+  m_PrefabInstance: {fileID: 2126423869}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &850387865
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6158,8 +6176,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 56c0ba5de46fca64cb5512eecd06f421, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameOverUI: {fileID: 0}
-  completeLvlUI: {fileID: 0}
+  gameOverUI: {fileID: 1751731899}
+  completeLvlUI: {fileID: 104644165}
 --- !u!114 &1673868215
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6193,15 +6211,30 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   waves:
+  - enemy: {fileID: 2111271487767861504, guid: b1d54c40e888f6b4b8577f117ad80b21, type: 3}
+    count: 15
+    rate: 1
+  - enemy: {fileID: 4737372182131363044, guid: 7924b5fde25ef1c45bbab6010c720cac, type: 3}
+    count: 15
+    rate: 1
   - enemy: {fileID: 4737372182131363044, guid: 7924b5fde25ef1c45bbab6010c720cac, type: 3}
     count: 5
-    rate: 1
+    rate: 2
   - enemy: {fileID: 2805112863033923481, guid: 05afaba6479c9b2459e27b79b4cd62e5, type: 3}
     count: 8
     rate: 0.5
+  - enemy: {fileID: 2111271487767861504, guid: b1d54c40e888f6b4b8577f117ad80b21, type: 3}
+    count: 12
+    rate: 1
+  - enemy: {fileID: 2805112863033923481, guid: 047702a12b4406d4980730ec43c3a982, type: 3}
+    count: 15
+    rate: 0.8
+  - enemy: {fileID: 4737372182131363044, guid: 8567516be0bda354dafac5b1d9511437, type: 3}
+    count: 30
+    rate: 1.6
   spawnPoint: {fileID: 1509056132}
-  timeBetweenWaves: 20
-  waveCountdownText: {fileID: 0}
+  timeBetweenWaves: 3
+  waveCountdownText: {fileID: 821407444}
   gameManager: {fileID: 1673868214}
 --- !u!114 &1673868217
 MonoBehaviour:
@@ -6215,7 +6248,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 424b500d83545a9469417dbe4f1d678c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startMoney: 600
+  startMoney: 400
   startLives: 50
 --- !u!4 &1673868218
 Transform:
@@ -6229,7 +6262,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1685789412
 PrefabInstance:
@@ -6455,6 +6488,12 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5673080233299854430, guid: 14efdd240a1914c4cae14adb26c9e741,
     type: 3}
   m_PrefabInstance: {fileID: 1727525413}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1751731899 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6454226603180678675, guid: ce711dc16b328b647a96b53ceb487a52,
+    type: 3}
+  m_PrefabInstance: {fileID: 2126423869}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1763241320
 PrefabInstance:
@@ -7951,7 +7990,7 @@ PrefabInstance:
     - target: {fileID: 6462664585510092814, guid: ce711dc16b328b647a96b53ceb487a52,
         type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 6462664585510092814, guid: ce711dc16b328b647a96b53ceb487a52,
         type: 3}

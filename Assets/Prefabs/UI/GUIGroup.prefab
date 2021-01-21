@@ -2171,7 +2171,7 @@ MonoBehaviour:
     m_LineSpacing: 0.8
   m_Text: 'Nurse
 
-    $200'
+    $250'
 --- !u!1 &2508666935171694389
 GameObject:
   m_ObjectHideFlags: 0
@@ -2402,7 +2402,7 @@ MonoBehaviour:
     m_LineSpacing: 0.8
   m_Text: 'Doctor
 
-    $150'
+    $175'
 --- !u!1 &2508666935517121595
 GameObject:
   m_ObjectHideFlags: 0

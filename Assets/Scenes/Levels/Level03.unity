@@ -4407,6 +4407,16 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2508666935978070398, guid: 757d74d961c103846b59cfcf7908ffb2,
+        type: 3}
+      propertyPath: Nurse.cost
+      value: 250
+      objectReference: {fileID: 0}
+    - target: {fileID: 2508666935978070398, guid: 757d74d961c103846b59cfcf7908ffb2,
+        type: 3}
+      propertyPath: Doctor.cost
+      value: 175
+      objectReference: {fileID: 0}
     - target: {fileID: 2508666936316119905, guid: 757d74d961c103846b59cfcf7908ffb2,
         type: 3}
       propertyPath: m_AnchorMax.y
@@ -5463,7 +5473,7 @@ MonoBehaviour:
     count: 15
     rate: 0.7
   spawnPoint: {fileID: 1114827309}
-  timeBetweenWaves: 20
+  timeBetweenWaves: 3
   waveCountdownText: {fileID: 1156126698}
   gameManager: {fileID: 1452911315}
 --- !u!114 &1452911318

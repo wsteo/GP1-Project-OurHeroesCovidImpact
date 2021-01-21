@@ -2439,13 +2439,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   waves:
   - enemy: {fileID: 4737372182131363044, guid: 7924b5fde25ef1c45bbab6010c720cac, type: 3}
-    count: 5
+    count: 10
     rate: 1
+  - enemy: {fileID: 2111271487767861504, guid: b1d54c40e888f6b4b8577f117ad80b21, type: 3}
+    count: 5
+    rate: 0.5
+  - enemy: {fileID: 4737372182131363044, guid: 7924b5fde25ef1c45bbab6010c720cac, type: 3}
+    count: 15
+    rate: 0.4
   - enemy: {fileID: 2805112863033923481, guid: 05afaba6479c9b2459e27b79b4cd62e5, type: 3}
     count: 8
     rate: 0.5
+  - enemy: {fileID: 4737372182131363044, guid: 7924b5fde25ef1c45bbab6010c720cac, type: 3}
+    count: 20
+    rate: 1.2
   spawnPoint: {fileID: 1014248781}
-  timeBetweenWaves: 20
+  timeBetweenWaves: 3
   waveCountdownText: {fileID: 1597526093}
   gameManager: {fileID: 895178857}
 --- !u!114 &895178860
@@ -2460,8 +2469,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 424b500d83545a9469417dbe4f1d678c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startMoney: 600
-  startLives: 50
+  startMoney: 350
+  startLives: 60
 --- !u!4 &895178861
 Transform:
   m_ObjectHideFlags: 0
@@ -2474,7 +2483,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &914525496
 PrefabInstance:
@@ -3316,7 +3325,7 @@ PrefabInstance:
     - target: {fileID: 1503953574805573267, guid: 1915ae210e673db44935c29e633b4c52,
         type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 1503953574805573267, guid: 1915ae210e673db44935c29e633b4c52,
         type: 3}
@@ -5288,7 +5297,7 @@ PrefabInstance:
     - target: {fileID: 17446866409636404, guid: 757d74d961c103846b59cfcf7908ffb2,
         type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 17446866409636404, guid: 757d74d961c103846b59cfcf7908ffb2,
         type: 3}

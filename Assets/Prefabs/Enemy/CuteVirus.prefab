@@ -112,7 +112,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startHealth: 100
   damageDeal: 8
-  rewardGold: 25
+  rewardGold: 20
   healthBar: {fileID: 4960568664648369575}
   isDead: 0
 --- !u!114 &-4457015934738040483

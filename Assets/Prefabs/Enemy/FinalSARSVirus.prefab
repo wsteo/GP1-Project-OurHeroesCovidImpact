@@ -89,7 +89,7 @@ GameObject:
   - component: {fileID: 8993699458458999985}
   - component: {fileID: 6863905160351729165}
   m_Layer: 0
-  m_Name: SARSVirus
+  m_Name: FinalSARSVirus
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -185,7 +185,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f2ff5e20cf0c7904a8016cfef40033f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startHealth: 500
+  startHealth: 620
   damageDeal: 17
   rewardGold: 40
   healthBar: {fileID: 5470697691675895502}
@@ -202,7 +202,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ff6c2e2d6c57e4e448cc7bf27065482c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 0.5
+  speed: 0.7
 --- !u!1 &6374007446313080219
 GameObject:
   m_ObjectHideFlags: 0
