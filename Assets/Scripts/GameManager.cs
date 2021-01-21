@@ -28,6 +28,7 @@ public class GameManager : MonoBehaviour
     void EndGame()
     {
         gameOver = true;
+        FindObjectOfType<AudioManager>().Play("PlayerLose");
         gameOverUI.SetActive(true);
     }
 

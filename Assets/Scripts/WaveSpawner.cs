@@ -28,6 +28,7 @@ public class WaveSpawner : MonoBehaviour
         if (waveIndex == waves.Length && EnemiesAlive == 0)
         {
             gameManager.WinLevel();
+            FindObjectOfType<AudioManager>().Play("PlayerWin");
             this.enabled = false;
         }
 

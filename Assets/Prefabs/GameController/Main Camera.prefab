@@ -197,7 +197,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sounds:
   - name: AttackSound
-    Clip: {fileID: 8300000, guid: f9cfc0e6ef7909a4fa3f8663ac5f3034, type: 3}
+    Clip: {fileID: 8300000, guid: 24252664d1f41c140864d611ea092c18, type: 3}
     volume: 0.304
     pitch: 0.5
     loop: 0

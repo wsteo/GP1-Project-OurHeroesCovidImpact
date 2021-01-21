@@ -19,7 +19,7 @@ public class LevelWon : MonoBehaviour
 
         yield return new WaitForSeconds(0.7f);
 
-        while(round < 25)
+        while(round < PlayerStats.Rounds)
         {
             round++;
             roundsText.text = round.ToString();
