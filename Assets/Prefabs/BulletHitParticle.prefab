@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 7777476762137527415}
   - component: {fileID: 7777476762137527414}
   - component: {fileID: 7777476762137527413}
+  - component: {fileID: -1504500055212340925}
   m_Layer: 0
   m_Name: BulletHitParticle
   m_TagString: Untagged
@@ -4812,3 +4813,21 @@ ParticleSystemRenderer:
   m_Mesh2: {fileID: 0}
   m_Mesh3: {fileID: 0}
   m_MaskInteraction: 0
+--- !u!114 &-1504500055212340925
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7777476762137527412}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f5e4649dc017de34f8ecab1e094819b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sounds:
+  - name: Attacksound
+    Clip: {fileID: 8300000, guid: 24252664d1f41c140864d611ea092c18, type: 3}
+    volume: 0.496
+    pitch: 0.1
+    source: {fileID: 0}
