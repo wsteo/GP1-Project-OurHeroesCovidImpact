@@ -16,6 +16,8 @@ public class Shoot_Brackeys : MonoBehaviour
 
     public GameObject bulletPrefab;
     public Transform firePoint;
+    public HeroAnimation HeroAnim;
+    public Animation anim;
 
     private void Start()
     {
@@ -66,6 +68,7 @@ public class Shoot_Brackeys : MonoBehaviour
 
     void Shoot()
     {
+        anim.Play("Army Attack");
         GameObject bulletGO = (GameObject)Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
         Bullet bullet = bulletGO.GetComponent<Bullet>();
 
