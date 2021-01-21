@@ -1,12 +1,13 @@
 ﻿using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
     public static bool gameOver;
-    public float restartDelay;
 
     public GameObject gameOverUI;
+    public GameObject completeLvlUI;
 
     private void Start()
     {
@@ -16,10 +17,8 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetKeyDown("e"))
-        {
-            EndGame();
-        }
+        if (gameOver)
+            return;
 
         if(PlayerStats.Lives <= 0)
         {
@@ -30,5 +29,11 @@ public class GameManager : MonoBehaviour
     {
         gameOver = true;
         gameOverUI.SetActive(true);
+    }
+
+    public void WinLevel()
+    {
+        gameOver = true;
+        completeLvlUI.SetActive(true);
     }
 }

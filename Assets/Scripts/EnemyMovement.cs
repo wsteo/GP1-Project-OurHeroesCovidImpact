@@ -40,6 +40,7 @@ public class EnemyMovement : MonoBehaviour
     private void EndPath(){
         Enemy_Stats dmg =  GetComponent<Enemy_Stats>();
 
+        dmg.isDead = true;
         WaveSpawner.EnemiesAlive--;
         PlayerStats.Lives -= dmg.damageDeal;
         Destroy(gameObject);

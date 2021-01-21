@@ -13,17 +13,14 @@ public class Shop : MonoBehaviour
     }
     public void SelectSoldier()
     {
-        Debug.Log("Bought Soldier");
         buildManager.SelectTurretToBuild(Army);
     }
     public void SelectDoctor()
     {
-        Debug.Log("Bought Doctor");
         buildManager.SelectTurretToBuild(Doctor);
     }
     public void SelectNurse()
     {
-        Debug.Log("Bought Nurse");
         buildManager.SelectTurretToBuild(Nurse);
     }
 }
