@@ -15,6 +15,8 @@ public class Enemy_Stats : MonoBehaviour
     [Header("Default Settings")]
     public Image healthBar;
 
+    public bool isDead = false;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -26,7 +28,7 @@ public class Enemy_Stats : MonoBehaviour
         health -= DamageAmount;
         healthBar.fillAmount = health / startHealth;
 
-        if(health <= 0)
+        if(health <= 0 && !isDead)
         {
             Die();
         }
@@ -34,6 +36,7 @@ public class Enemy_Stats : MonoBehaviour
 
     void Die()
     {
+        isDead = true;
         WaveSpawner.EnemiesAlive--;
         PlayerStats.Money += this.rewardGold;
         Destroy(gameObject);
