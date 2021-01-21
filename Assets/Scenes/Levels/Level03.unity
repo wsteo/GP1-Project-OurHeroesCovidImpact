@@ -2453,6 +2453,33 @@ Tilemap:
   m_GameObject: {fileID: 632820819}
   m_Enabled: 1
   m_Tiles:
+  - first: {x: -10, y: -4, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 9
+      m_TileSpriteIndex: 9
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_TileObjectToInstantiateIndex: 65535
+      m_AllTileFlags: 1073741825
+  - first: {x: -9, y: -4, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 9
+      m_TileSpriteIndex: 9
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_TileObjectToInstantiateIndex: 65535
+      m_AllTileFlags: 1073741825
+  - first: {x: -8, y: -4, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 9
+      m_TileSpriteIndex: 9
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_TileObjectToInstantiateIndex: 65535
+      m_AllTileFlags: 1073741825
   - first: {x: -7, y: -4, z: 0}
     second:
       serializedVersion: 2
@@ -2995,7 +3022,7 @@ Tilemap:
     m_Data: {fileID: 11400000, guid: 4941dad4d4cd5c34f8d44da55e3b9565, type: 2}
   - m_RefCount: 35
     m_Data: {fileID: 11400000, guid: 113e3900ff415fc44bce7d30994598b0, type: 2}
-  - m_RefCount: 9
+  - m_RefCount: 12
     m_Data: {fileID: 11400000, guid: fe98d735c2fa5de40a3357aaaf5086e1, type: 2}
   m_TileSpriteArray:
   - m_RefCount: 0
@@ -3020,11 +3047,11 @@ Tilemap:
   - m_RefCount: 35
     m_Data: {fileID: 8712949452317474732, guid: 54382056a0fc36541af4d35482a93877,
       type: 3}
-  - m_RefCount: 9
+  - m_RefCount: 12
     m_Data: {fileID: 9141764293298902854, guid: 54382056a0fc36541af4d35482a93877,
       type: 3}
   m_TileMatrixArray:
-  - m_RefCount: 58
+  - m_RefCount: 61
     m_Data:
       e00: 1
       e01: 0
@@ -3043,13 +3070,13 @@ Tilemap:
       e32: 0
       e33: 1
   m_TileColorArray:
-  - m_RefCount: 58
+  - m_RefCount: 61
     m_Data: {r: 1, g: 1, b: 1, a: 1}
   m_TileObjectToInstantiateArray: []
   m_AnimationFrameRate: 1
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Origin: {x: -7, y: -6, z: 0}
-  m_Size: {x: 16, y: 11, z: 1}
+  m_Origin: {x: -10, y: -6, z: 0}
+  m_Size: {x: 19, y: 11, z: 1}
   m_TileAnchor: {x: 0.5, y: 0.5, z: 0}
   m_TileOrientation: 0
   m_TileOrientationMatrix:
@@ -4109,7 +4136,7 @@ PrefabInstance:
     - target: {fileID: 2155131664874972471, guid: 331f4268eb0ce7d4aa3d55bd142eb902,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -9.87
+      value: -11.54
       objectReference: {fileID: 0}
     - target: {fileID: 2155131664874972471, guid: 331f4268eb0ce7d4aa3d55bd142eb902,
         type: 3}
