@@ -728,40 +728,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: -6386844088236955233, guid: 1915ae210e673db44935c29e633b4c52,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: -809413710218729901, guid: 1915ae210e673db44935c29e633b4c52,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 1503953574805573262, guid: 1915ae210e673db44935c29e633b4c52,
         type: 3}
       propertyPath: m_Name
       value: Main Camera
-      objectReference: {fileID: 0}
-    - target: {fileID: 1503953574805573262, guid: 1915ae210e673db44935c29e633b4c52,
-        type: 3}
-      propertyPath: m_Layer
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 1503953574805573264, guid: 1915ae210e673db44935c29e633b4c52,
-        type: 3}
-      propertyPath: m_BackGroundColor.b
-      value: 0.56078434
-      objectReference: {fileID: 0}
-    - target: {fileID: 1503953574805573264, guid: 1915ae210e673db44935c29e633b4c52,
-        type: 3}
-      propertyPath: m_BackGroundColor.g
-      value: 0.7490196
-      objectReference: {fileID: 0}
-    - target: {fileID: 1503953574805573264, guid: 1915ae210e673db44935c29e633b4c52,
-        type: 3}
-      propertyPath: m_BackGroundColor.r
-      value: 0.12941177
       objectReference: {fileID: 0}
     - target: {fileID: 1503953574805573267, guid: 1915ae210e673db44935c29e633b4c52,
         type: 3}
@@ -2859,7 +2829,7 @@ TilemapRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: -1
+  m_SortingOrder: 0
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0, y: 0, z: 0}
   m_MaxChunkCount: 16
@@ -6484,8 +6454,8 @@ TilemapRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -1611857393
+  m_SortingLayer: -1
   m_SortingOrder: 0
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0, y: 0, z: 0}
@@ -8329,6 +8299,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: GUIGroup
+      objectReference: {fileID: 0}
+    - target: {fileID: 1229540908406141392, guid: 757d74d961c103846b59cfcf7908ffb2,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2508666935171694394, guid: 757d74d961c103846b59cfcf7908ffb2,
         type: 3}
