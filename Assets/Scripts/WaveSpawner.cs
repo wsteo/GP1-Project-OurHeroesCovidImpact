@@ -23,12 +23,20 @@ public class WaveSpawner : MonoBehaviour
 
     private void Update()
     {
-        StartCoroutine(SkipWaveWhenEnemyFinish());
+        //StartCoroutine(SkipWaveWhenEnemyFinish());
+        if(EnemiesAlive > 0)
+        {
+            return;
+        }
 
         if (waveIndex == waves.Length && EnemiesAlive == 0)
         {
-            gameManager.WinLevel();
-            this.enabled = false;
+            if(gameManager.isOver == false)
+            {
+                gameManager.WinLevel();
+                FindObjectOfType<AudioManager>().Play("PlayerWin");
+                this.enabled = false;
+            }
         }
 
         if (countdown <= 0f && waveIndex < waves.Length)

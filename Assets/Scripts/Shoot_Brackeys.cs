@@ -72,6 +72,8 @@ public class Shoot_Brackeys : MonoBehaviour
         GameObject bulletGO = (GameObject)Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
         Bullet bullet = bulletGO.GetComponent<Bullet>();
 
+        FindObjectOfType<AudioManager>().Play("AttackSound");
+
         if (bullet != null)
         {
             bullet.Seek(target);

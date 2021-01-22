@@ -208,6 +208,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 60657470}
+  - component: {fileID: 60657471}
   m_Layer: 5
   m_Name: ScrollRect
   m_TagString: Untagged
@@ -235,6 +236,25 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &60657471
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 60657469}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 69f3aee63a98cfd41948a4e7588bb3fa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fader: {fileID: 439380089}
+  levelButton:
+  - {fileID: 319970811}
+  - {fileID: 1230165870}
+  - {fileID: 359750083}
+  - {fileID: 963663548}
+  - {fileID: 638394772}
 --- !u!1 &68329591
 GameObject:
   m_ObjectHideFlags: 0
@@ -687,7 +707,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 0, y: 3e-44, z: 4.153e-42, w: 1.04e-43}
+  m_BoundingSphereOverride: {x: 0, y: 1.23e-43, z: 1.5112e-41, w: 1.04e-43}
   m_UseBoundingSphereOverride: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
@@ -1390,6 +1410,7 @@ GameObject:
   - component: {fileID: 319970813}
   - component: {fileID: 319970812}
   - component: {fileID: 319970811}
+  - component: {fileID: 319970814}
   m_Layer: 5
   m_Name: Button1
   m_TagString: Untagged
@@ -1430,12 +1451,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Navigation:
-    m_Mode: 3
+    m_Mode: 0
     m_SelectOnUp: {fileID: 0}
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
     m_SelectOnRight: {fileID: 0}
-  m_Transition: 1
+  m_Transition: 3
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
@@ -1508,6 +1529,25 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 319970809}
   m_CullTransparentMesh: 0
+--- !u!95 &319970814
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 319970809}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: e5224cc17c7dbd143a5e247b243ba24e, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &357503267
 GameObject:
   m_ObjectHideFlags: 0
@@ -5098,6 +5138,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fader: {fileID: 439380089}
+  levelButton: []
 --- !u!1 &1319697936
 GameObject:
   m_ObjectHideFlags: 0

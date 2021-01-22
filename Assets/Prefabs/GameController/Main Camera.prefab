@@ -46,7 +46,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_BackGroundColor: {r: 0.12941177, g: 0.7490196, b: 0.56078434, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -63,7 +63,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 5
+  orthographic size: 6
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -197,8 +197,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sounds:
   - name: AttackSound
-    Clip: {fileID: 8300000, guid: f9cfc0e6ef7909a4fa3f8663ac5f3034, type: 3}
-    volume: 0.304
+    Clip: {fileID: 8300000, guid: 24252664d1f41c140864d611ea092c18, type: 3}
+    volume: 0.085
     pitch: 0.5
     loop: 0
     source: {fileID: 0}
