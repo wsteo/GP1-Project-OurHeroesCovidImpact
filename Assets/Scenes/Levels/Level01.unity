@@ -1197,6 +1197,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 56c0ba5de46fca64cb5512eecd06f421, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isOver: 0
   gameOverUI: {fileID: 138341}
   completeLvlUI: {fileID: 243278929}
 --- !u!114 &260911620
@@ -1233,7 +1234,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   waves:
   - enemy: {fileID: 2111271487767861504, guid: b1d54c40e888f6b4b8577f117ad80b21, type: 3}
-    count: 10
+    count: 5
     rate: 1
   spawnPoint: {fileID: 798086305}
   timeBetweenWaves: 3
