@@ -185,7 +185,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f2ff5e20cf0c7904a8016cfef40033f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startHealth: 400
+  startHealth: 500
   damageDeal: 17
   rewardGold: 50
   effect: {fileID: 6175638054610061037, guid: 071f47e206922dd4e8a5e6f91d0591cc, type: 3}
