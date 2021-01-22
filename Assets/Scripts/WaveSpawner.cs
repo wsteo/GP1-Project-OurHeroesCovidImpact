@@ -26,6 +26,7 @@ public class WaveSpawner : MonoBehaviour
         waveIndex = 0;
         countdown = 3f;
         this.enabled = true;
+        EnemiesAlive = 0;
     }
 
     private void Update()
