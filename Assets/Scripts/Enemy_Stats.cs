@@ -9,6 +9,7 @@ public class Enemy_Stats : MonoBehaviour
     public int damageDeal = 10;
 
     public int rewardGold = 50;
+    public GameObject effect;
 
     private float health;
 
@@ -30,6 +31,7 @@ public class Enemy_Stats : MonoBehaviour
 
         if(health <= 0 && !isDead)
         {
+            Instantiate(effect, transform.position, Quaternion.identity);
             Die();
         }
     }

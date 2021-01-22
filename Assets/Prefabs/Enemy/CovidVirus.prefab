@@ -188,6 +188,7 @@ MonoBehaviour:
   startHealth: 100
   damageDeal: 10
   rewardGold: 40
+  effect: {fileID: 6175638054610061037, guid: 071f47e206922dd4e8a5e6f91d0591cc, type: 3}
   healthBar: {fileID: 658448320923390966}
   isDead: 0
 --- !u!114 &-5250091493217527271
