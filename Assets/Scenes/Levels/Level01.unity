@@ -1236,7 +1236,7 @@ MonoBehaviour:
     count: 10
     rate: 1
   spawnPoint: {fileID: 798086305}
-  timeBetweenWaves: 20
+  timeBetweenWaves: 3
   waveCountdownText: {fileID: 1164836941}
   gameManager: {fileID: 260911619}
 --- !u!114 &260911622
@@ -10162,6 +10162,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1794934596255405834, guid: 4661d3229aedc5c4f913babbb1786587,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3109810554683216589, guid: 4661d3229aedc5c4f913babbb1786587,
         type: 3}
       propertyPath: m_AnchorMax.y
@@ -10192,6 +10197,11 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3109810554957256856, guid: 4661d3229aedc5c4f913babbb1786587,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3109810555249290683, guid: 4661d3229aedc5c4f913babbb1786587,
         type: 3}
       propertyPath: m_AnchorMax.y
@@ -10250,6 +10260,11 @@ PrefabInstance:
     - target: {fileID: 3109810556386286048, guid: 4661d3229aedc5c4f913babbb1786587,
         type: 3}
       propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8436511976339905304, guid: 4661d3229aedc5c4f913babbb1786587,
+        type: 3}
+      propertyPath: m_LocalPosition.z
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []

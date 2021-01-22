@@ -2196,7 +2196,7 @@ MonoBehaviour:
     count: 20
     rate: 1.2
   spawnPoint: {fileID: 37756190}
-  timeBetweenWaves: 20
+  timeBetweenWaves: 3
   waveCountdownText: {fileID: 2145212444}
   gameManager: {fileID: 628780266}
 --- !u!114 &628780269
@@ -2211,7 +2211,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 424b500d83545a9469417dbe4f1d678c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startMoney: 250
+  startMoney: 275
   startLives: 40
 --- !u!4 &628780270
 Transform:

@@ -6231,7 +6231,7 @@ MonoBehaviour:
     rate: 0.8
   - enemy: {fileID: 4737372182131363044, guid: 8567516be0bda354dafac5b1d9511437, type: 3}
     count: 30
-    rate: 1.6
+    rate: 2
   spawnPoint: {fileID: 1509056132}
   timeBetweenWaves: 3
   waveCountdownText: {fileID: 821407444}

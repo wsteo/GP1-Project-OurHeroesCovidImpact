@@ -198,7 +198,7 @@ MonoBehaviour:
   sounds:
   - name: AttackSound
     Clip: {fileID: 8300000, guid: 24252664d1f41c140864d611ea092c18, type: 3}
-    volume: 0.304
+    volume: 0.085
     pitch: 0.5
     loop: 0
     source: {fileID: 0}
