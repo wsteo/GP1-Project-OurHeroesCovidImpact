@@ -1130,7 +1130,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 5a684c08b37eeac45a1a00238b165354, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -3669,6 +3669,18 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1993033770}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &702597021 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 9001663770835881790, guid: 757d74d961c103846b59cfcf7908ffb2,
+    type: 3}
+  m_PrefabInstance: {fileID: 1156126696}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &708846666
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4984,10 +4996,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1273898017, guid: 757d74d961c103846b59cfcf7908ffb2, type: 3}
-      propertyPath: sceneFader
-      value: 
-      objectReference: {fileID: 1156126700}
     - target: {fileID: 17446866409636404, guid: 757d74d961c103846b59cfcf7908ffb2,
         type: 3}
       propertyPath: m_RootOrder
@@ -5118,16 +5126,6 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2508666935978070398, guid: 757d74d961c103846b59cfcf7908ffb2,
-        type: 3}
-      propertyPath: Nurse.cost
-      value: 250
-      objectReference: {fileID: 0}
-    - target: {fileID: 2508666935978070398, guid: 757d74d961c103846b59cfcf7908ffb2,
-        type: 3}
-      propertyPath: Doctor.cost
-      value: 175
-      objectReference: {fileID: 0}
     - target: {fileID: 2508666936316119905, guid: 757d74d961c103846b59cfcf7908ffb2,
         type: 3}
       propertyPath: m_AnchorMax.y
@@ -5171,36 +5169,12 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 1156126696}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1156126698 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 9001663770835881790, guid: 757d74d961c103846b59cfcf7908ffb2,
-    type: 3}
-  m_PrefabInstance: {fileID: 1156126696}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1156126699 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1164713001, guid: 757d74d961c103846b59cfcf7908ffb2,
     type: 3}
   m_PrefabInstance: {fileID: 1156126696}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1156126700 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 1229540907990303847, guid: 757d74d961c103846b59cfcf7908ffb2,
-    type: 3}
-  m_PrefabInstance: {fileID: 1156126696}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d46f979262689354b8f20242dfaa7aaa, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!4 &1161709932 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5673080233299854430, guid: 14efdd240a1914c4cae14adb26c9e741,
@@ -6711,7 +6685,7 @@ MonoBehaviour:
     rate: 0.7
   spawnPoint: {fileID: 1114827309}
   timeBetweenWaves: 3
-  waveCountdownText: {fileID: 1156126698}
+  waveCountdownText: {fileID: 702597021}
   gameManager: {fileID: 1452911315}
 --- !u!114 &1452911318
 MonoBehaviour:

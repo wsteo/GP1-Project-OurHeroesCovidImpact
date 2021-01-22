@@ -15,27 +15,34 @@ public class WaveSpawner : MonoBehaviour
 
     [SerializeField]
     public float timeBetweenWaves = 5f;
-    private float countdown = 3f;
+    private float countdown;
     public Text waveCountdownText;
-    private int waveIndex = 0;
+    private int waveIndex;
 
     public GameManager gameManager;
+
+    public void Start()
+    {
+        waveIndex = 0;
+        countdown = 3f;
+        this.enabled = true;
+    }
 
     private void Update()
     {
         //StartCoroutine(SkipWaveWhenEnemyFinish());
-        if(EnemiesAlive > 0)
+        if (EnemiesAlive > 0)
         {
             return;
         }
 
+
         if (waveIndex == waves.Length && EnemiesAlive == 0)
         {
-            if(gameManager.isOver == false)
+            if(gameManager.isOver == true)
             {
-                gameManager.WinLevel();
                 FindObjectOfType<AudioManager>().Play("PlayerWin");
-                this.enabled = false;
+                gameManager.WinLevel();
             }
         }
 
@@ -50,10 +57,9 @@ public class WaveSpawner : MonoBehaviour
         {
             countdown = 0;
         }
-        else
-        {
-            countdown -= Time.deltaTime;
-        }
+
+        countdown -= Time.deltaTime;
+
         waveCountdownText.text = "Next Wave in: " + Mathf.Round(countdown).ToString();
 
     }

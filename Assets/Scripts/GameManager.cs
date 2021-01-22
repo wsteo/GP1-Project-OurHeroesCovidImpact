@@ -14,6 +14,7 @@ public class GameManager : MonoBehaviour
     private void Start()
     {
         gameOver = false;
+        isOver = gameOver;
     }
 
     // Update is called once per frame
@@ -26,12 +27,16 @@ public class GameManager : MonoBehaviour
         {
             EndGame();
             isOver = gameOver;
+
+            WaveSpawner spawner = GetComponent<WaveSpawner>();
+            spawner.enabled = false;
         }
     }
-    void EndGame()
+    private void EndGame()
     {
         gameOver = true;
         FindObjectOfType<AudioManager>().Play("PlayerLose");
+        WaveSpawner.EnemiesAlive = 0;
         gameOverUI.SetActive(true);
     }
 
