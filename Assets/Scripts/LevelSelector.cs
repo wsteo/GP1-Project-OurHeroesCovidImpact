@@ -7,13 +7,6 @@ public class LevelSelector : MonoBehaviour
 
     public Button[] levelButton;
 
-    private void Start()
-    {
-        for (int i = 0; i < levelButton.Length; i++)
-        {
-            levelButton[i].interactable = false;
-        }
-    }
     public void Select(int level) 
     {
         fader.FadeTo(level);
