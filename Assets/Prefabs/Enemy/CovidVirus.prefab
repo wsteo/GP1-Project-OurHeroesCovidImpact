@@ -187,7 +187,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startHealth: 100
   damageDeal: 10
-  rewardGold: 40
+  rewardGold: 15
   effect: {fileID: 6175638054610061037, guid: 071f47e206922dd4e8a5e6f91d0591cc, type: 3}
   healthBar: {fileID: 658448320923390966}
   isDead: 0
