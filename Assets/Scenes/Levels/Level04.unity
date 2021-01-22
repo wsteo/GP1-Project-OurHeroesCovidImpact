@@ -5290,6 +5290,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 29300346, guid: 757d74d961c103846b59cfcf7908ffb2, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1164713004, guid: 757d74d961c103846b59cfcf7908ffb2, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: a163b2480992a234c988fd3382bf217c, type: 2}
     - target: {fileID: 1273898017, guid: 757d74d961c103846b59cfcf7908ffb2, type: 3}
       propertyPath: sceneFader
       value: 

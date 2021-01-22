@@ -31,9 +31,12 @@ public class WaveSpawner : MonoBehaviour
 
         if (waveIndex == waves.Length && EnemiesAlive == 0)
         {
-            gameManager.WinLevel();
-            FindObjectOfType<AudioManager>().Play("PlayerWin");
-            this.enabled = false;
+            if(gameManager.isOver == false)
+            {
+                gameManager.WinLevel();
+                FindObjectOfType<AudioManager>().Play("PlayerWin");
+                this.enabled = false;
+            }
         }
 
         if (countdown <= 0f && waveIndex < waves.Length)

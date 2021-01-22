@@ -5,9 +5,11 @@ using UnityEngine.UI;
 public class GameManager : MonoBehaviour
 {
     public static bool gameOver;
+    public bool isOver;
 
     public GameObject gameOverUI;
     public GameObject completeLvlUI;
+
 
     private void Start()
     {
@@ -19,10 +21,11 @@ public class GameManager : MonoBehaviour
     {
         if (gameOver)
             return;
-
-        if(PlayerStats.Lives <= 0)
+        
+        if (PlayerStats.Lives <= 0)
         {
             EndGame();
+            isOver = gameOver;
         }
     }
     void EndGame()
